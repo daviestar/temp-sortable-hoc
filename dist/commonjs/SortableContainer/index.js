@@ -770,7 +770,7 @@ function sortableContainer(WrappedComponent) {
     pressDelay: _propTypes2.default.number,
     useDragHandle: _propTypes2.default.bool,
     useWindowAsScrollContainer: _propTypes2.default.bool,
-    ghostParent: _propTypes2.default.object,
+    ghostParent: _propTypes2.default.oneOfType([_propTypes2.default.bool, _propTypes2.default.element]),
     hideSortableGhost: _propTypes2.default.bool,
     lockToContainerEdges: _propTypes2.default.bool,
     lockOffset: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string, _propTypes2.default.arrayOf(_propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]))]),

@@ -742,7 +742,7 @@ export default function sortableContainer(WrappedComponent) {
     pressDelay: PropTypes.number,
     useDragHandle: PropTypes.bool,
     useWindowAsScrollContainer: PropTypes.bool,
-    ghostParent: PropTypes.object,
+    ghostParent: PropTypes.oneOfType([PropTypes.bool, PropTypes.element]),
     hideSortableGhost: PropTypes.bool,
     lockToContainerEdges: PropTypes.bool,
     lockOffset: PropTypes.oneOfType([PropTypes.number, PropTypes.string, PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))]),
