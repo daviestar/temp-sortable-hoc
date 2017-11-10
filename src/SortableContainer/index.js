@@ -77,7 +77,7 @@ export default function sortableContainer(WrappedComponent, config = {withRef: f
       useWindowAsScrollContainer: PropTypes.bool,
       ghostParent: PropTypes.oneOfType([
         PropTypes.bool,
-        PropTypes.element,
+        PropTypes.instanceOf(Element),
       ]),
       hideSortableGhost: PropTypes.bool,
       lockToContainerEdges: PropTypes.bool,
